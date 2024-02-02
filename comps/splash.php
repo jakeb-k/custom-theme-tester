@@ -19,6 +19,9 @@
                 
             </div>
         </div>
+        <div class="testimonials">
+            <p>My bushes are so trim and clean, I love it. Great work from Indy!</p>
+        </div>
     </div>
     
 </div>

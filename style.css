@@ -83,6 +83,11 @@ SPLASH PAGE SECTION STYLING
     border:1px solid green; 
     border-radius:15px; 
 }
+.testimonials {
+    text-align:center; 
+}
+
+
 /* VINE BTN STYLING */
 
 button.vine-button {
@@ -143,7 +148,7 @@ ABOUT SECTION STYLING
     margin:20px 0; 
     
 }
-h1, .about-list {
+.about-container h1, .about-list {
     margin: auto 10%;
 }
 .about-list {
@@ -152,6 +157,103 @@ h1, .about-list {
     flex-direction:row;
     justify-content: space-around;
 }
+/* 
+
+
+
+CONTACT FORM STYLING
+
+
+
+
+*/
+
+#contact {
+    align-self: center;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #006400;
+    font-size: 14px;
+    border:3px solid #006400;
+    border-radius: 25px;
+    margin:25px auto; 
+    box-shadow:10px 10px 5px rgb(64, 63, 63);
+}
+
+label {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+input {
+    padding: 10px;
+    border-radius:5px; 
+    border:none; 
+}
+textarea {
+    height:150px; 
+    border-radius:5px; 
+    border:none; 
+}
+#note {
+    margin-bottom: 40px;
+}
+
+#contact h1 {
+    font-family: 'Staatliches', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 44px;
+    color: #006400;
+   
+}
+#contact button {
+    width:100%;
+    background:none;
+    border:none;
+    padding:15px; 
+    color:#006400; 
+    font-size:24px; 
+
+    
+}
+
+
+.cInput {
+    display:flex;
+    flex-direction:column; 
+}
+@keyframes select {
+    0% {
+        background-color: #006400;
+    }
+    50% {
+        background-color: #00640083;
+    }
+    100% {
+        background-color: none;
+    }
+}
+.subBtn{
+    margin:auto; 
+    width:95%;
+    padding:10px; 
+    border:3px solid #006400; 
+    border-radius:5px; 
+    background:none;
+}
+.subBtn:active {
+    animation: select 0.3s ease-in-out; 
+}
+.subBtn:hover {
+    transition:0.1s ease-in-out; 
+    background-color: #00640083;
+}
+
+
 
 
 /*footer styling*/
@@ -175,7 +277,7 @@ h1, .about-list {
 }
 
 
-/*customnav styling */
+/*highlight link styling */
 nav a {
     font-size:20px; 
     text-decoration: none;
@@ -249,3 +351,4 @@ nav a:hover {
     --s: #0005;
     transition: none;
 }
+
