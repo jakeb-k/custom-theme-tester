@@ -29,9 +29,23 @@
                 ?>
             </div>
         <?php endwhile; endif; ?>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="slideshow">
-                
+                <?php 
+                for ($i = 1; $i <= 5; $i++) { // Adjust the loop limit based on how many images you expect
+                    $slide_image_id = get_post_meta(get_the_ID(), 'after_' . $i, true); // This gets the image ID
+                    if (!empty($slide_image_id)) {
+                        $slide_image_url = wp_get_attachment_url($slide_image_id); // Convert ID to URL
+                        if (!empty($slide_image_url)): ?>
+                            <div class="slide2">
+                                <img src="<?php echo esc_url($slide_image_url); ?>" style="width:100%">
+                            </div>
+                        <?php endif;
+                    }
+                }
+                ?>
             </div>
+        <?php endwhile; endif; ?>
         </div>
         <div class="testimonials">
             <h3>My bushes are so trim and clean, I love it. Great work from Indy!</h3>

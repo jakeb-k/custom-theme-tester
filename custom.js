@@ -59,3 +59,27 @@ jQuery(document).ready(function($){
     // Change slide every 3 seconds
     setInterval(changeSlide, 3000);
 });
+
+//fade slideshow 2
+jQuery(document).ready(function($){
+    let currentSlide2 = 0;
+    const slides2 = $('.slide2');
+    const totalSlides2 = slides2.length;
+
+    // Set the first slide to be active initially
+    slides2.eq(currentSlide2).addClass('active');
+
+    const changeSlide = function() {
+        // Remove active class from the current slide
+        slides2.eq(currentSlide2).removeClass('active');
+
+        // Move to the next slide, or loop back to the first if at the end
+        currentSlide2 = (currentSlide2 + 1) % totalSlides2;
+
+        // Add active class to the new current slide
+        slides2.eq(currentSlide2).addClass('active');
+    };
+
+    // Change slide every 3 seconds
+    setInterval(changeSlide, 3000);
+});

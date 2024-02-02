@@ -116,7 +116,7 @@ SPLASH PAGE SECTION STYLING
 }
 .splash-container {
     width:80%;
-    margin:20% auto 0; 
+    margin:15% auto 0; 
 }
 .before-after {
     display:flex;
@@ -140,11 +140,26 @@ SPLASH PAGE SECTION STYLING
 .slideshow {
     position: relative;
     /* Adjust as needed */
-    height:310px;/* Adjust to fit the height of your slides */
+    height:309px;/* Adjust to fit the height of your slides */
     overflow: hidden;
   }
   
-  .slide {
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensure this matches the height of the slideshow container */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 1; /* Keep slides below the active one */
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 2; /* Ensure the active slide is above the others */
+}
+.slide2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -155,7 +170,7 @@ SPLASH PAGE SECTION STYLING
     z-index: 1; /* Keep slides below the active one */
   }
   
-  .slide.active {
+  .slide2.active {
     opacity: 1;
     z-index: 2; /* Ensure the active slide is above the others */
   }
