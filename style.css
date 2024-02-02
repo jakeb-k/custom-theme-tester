@@ -5,10 +5,7 @@ Author: Jakeb Knowles
 Version: 1.0
 */
 
-#content {
-    width:80%;
-    margin:5% auto; 
-}
+
 
 /*
 
@@ -64,6 +61,10 @@ SPLASH PAGE SECTION STYLING
 
 
 */
+.splash-container {
+    width:80%;
+    margin:5% auto; 
+}
 .before-after {
     display:flex;
     width:60%; 
@@ -128,9 +129,29 @@ button.vine-button:hover::after {
     opacity: 0;
 }
 
+/* 
+
+
+ABOUT SECTION STYLING
 
 
 
+ */
+.about-container {
+    padding:2.5% 0; 
+    background:green; 
+    margin:20px 0; 
+    
+}
+h1, .about-list {
+    margin: auto 10%;
+}
+.about-list {
+    margin-top:2.5%; 
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
 
 
 /*footer styling*/
