@@ -7,39 +7,27 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
-    <div class="site-header">
-
-        <div class="site-logo">
-                <a href="<?php echo esc_url(home_url('/')); ?>">
-                <?php
-                    $logo = get_custom_logo();
-                    if ($logo) {
-                        echo $logo;
-                    }
-                    ?>
-                <?php bloginfo('name'); ?>
-                </a>
-
+<div class="header">
+   
+    <div class="logo">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/mowgo.jpg" alt="Descriptive Alt Text">
+    </div>
+    <div class="header-section">
+        <div class="slideBtn" style="margin-top:42.5px; --color:#ccff33;">
+            <button>TESTIMONIALS</button>
         </div>
-        <div class="site-navigation">
-            <nav>
-               
-                    <?php
-                    wp_nav_menu(array(
-                        'theme_location' => 'navMenu', // Use the registered menu location
-                        'container' => false, // Remove the outer <div> container
-                        'items_wrap' => '%3$s', // Display items without <ul> and <li>
-                    ));
-                    ?>
-                
-            </nav>
-        </div>
-        <div class="site-actions">
-            <div class="slideBtn">
-                <button> Contact Now </button>
+
+        <div class="h-sub-sec">
+
+            <div class="icons">
+                <span class="icons"><i class="fa-brands fa-square-facebook fa-2x" style="color: #ccff33;"></i></span>
+                <span class="icons"><i class="fa-brands fa-instagram fa-2x" style="color: #ccff33;"></i></span>
+            </div>
+
+            <div class="slideBtn" style="--color:#ccff33; ">
+                <button>CONTACT</button>
             </div>
         </div>
+      
     </div>
- 
-
+</div>
