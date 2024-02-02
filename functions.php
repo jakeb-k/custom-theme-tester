@@ -9,4 +9,11 @@ function register_custom_menu() {
     register_nav_menu('navMenu', __('Nav Menu', 'your-theme-textdomain'));
 }
 add_action('init', 'register_custom_menu');
+
+
+function enqueue_custom_scripts() {
+    wp_enqueue_script('jquery'); // WordPress includes jQuery by default, so we just enqueue it.
+    wp_enqueue_script('custom', get_template_directory_uri() . '/custom.js', array('jquery'), null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
 ?> 

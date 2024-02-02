@@ -53,6 +53,42 @@ HEADER STYLING
 /*
 
 
+scrolled
+
+
+
+*/
+
+.header {
+	transition:0.3s ease-in-out; 
+    position:fixed; 
+    top:0; 
+    width:100%; 
+    transition:0.3s ease-in-out; 
+    z-index:4;
+}
+.header.scrolled  {
+    background-color: #006400bd;
+    height:17.5%; 
+	transition:0.3s ease-in-out !important; 
+    .logo img {
+        width:199px;
+        height:auto; 
+    }
+}
+.header.scrolled .slideBtn button {
+    font-size: 1.15em;
+    padding: 0.4em 0.8em;
+	transition:0.3s ease-in-out !important; 
+
+}
+.header.scrolled * {
+	transition:0.3s ease-in-out;  
+
+}
+/*
+
+
 
 
 SPLASH PAGE SECTION STYLING 
@@ -76,7 +112,7 @@ SPLASH PAGE SECTION STYLING
 }
 .splash-container {
     width:80%;
-    margin:5% auto; 
+    margin:20% auto 0; 
 }
 .before-after {
     display:flex;
@@ -127,7 +163,7 @@ button.vine-button::after {
     background-repeat: no-repeat;
     background-position: center;
     opacity: 1;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.1s ease-in-out;
 }
 
 button.vine-button::before {
@@ -177,6 +213,42 @@ ABOUT SECTION STYLING
     font-family:'Work Sans', sans-serif;
     color:white; 
     font-size:22px; 
+}
+/*
+
+
+
+
+//ABOUT SECTION FLY IN ANIM HANDLING
+
+
+*/
+
+.animated-title {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 1s;
+}
+
+.animated-list {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.serBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.in-view .animated-title {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.in-view .animated-list {
+    opacity: 1;
+    transform: translateY(0);
 }
 /* 
 

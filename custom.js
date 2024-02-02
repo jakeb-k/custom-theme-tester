@@ -1,0 +1,37 @@
+jQuery(document).ready(function($) {
+    var header = $('.header'); // Replace '.header' with your header's class or ID.
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll > 30) { // Set the scroll trigger distance here.
+            header.addClass('scrolled');
+        } else {
+            header.removeClass('scrolled');
+        }
+    });
+});
+
+//bounding box for about sec
+function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+//scroll to about section
+function handleScroll() {
+    var elements = document.querySelectorAll('.about-container');
+    elements.forEach(function(element) {
+        if (isElementInViewport(element)) {
+            element.classList.add('in-view');
+        }
+    });
+}
+
+//event listeners for all the funcs
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('resize', handleScroll);
+handleScroll(); // Call this initially to check on page load
