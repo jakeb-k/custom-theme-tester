@@ -8,8 +8,8 @@
             </span>
         </h3>
         <div class="before-after">
-            <h3>BEFORE</h3>
-            <h3>AFTER</h3>
+            <h1>BEFORE</h1>
+            <h1>AFTER</h1>
         </div>
         <div class="slides-container">
             <div class="slideshow">
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="testimonials">
-            <p>My bushes are so trim and clean, I love it. Great work from Indy!</p>
+            <h3>My bushes are so trim and clean, I love it. Great work from Indy!</h3>
         </div>
     </div>
     

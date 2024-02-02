@@ -6,7 +6,7 @@
             <h1 style="color:white;">LAWNS</h1>
         </a>
     </div>
-    <p style="color:#ccff33;margin-top:auto;"> © 2023 JK Web Dev </p>
+    <p class="copyright" style="color:#ccff33;margin-top:auto;"> © 2023 JK Web Dev </p>
     <div class="header-section">
         <div class="slideBtn" style="margin-top:42.5px; --color:#ccff33;">
             <button>TESTIMONIALS</button>
