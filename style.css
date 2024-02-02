@@ -6,7 +6,11 @@ Version: 1.0
 */
 @import url('https://fonts.cdnfonts.com/css/work-sans');
 @import url('https://fonts.cdnfonts.com/css/staatliches-2');
-
+body {
+    padding:0;
+    margin:-0px; 
+    overflow-x: hidden;
+}
 
 /*
 
@@ -33,7 +37,6 @@ HEADER STYLING
     justify-content: space-evenly;
     align-items: center;
     width:40%; 
-    margin-top:auto; 
 }
 .logo img {
     height:auto;
@@ -45,6 +48,7 @@ HEADER STYLING
 .h-sub-sec {
     display:flex;
     flex-direction:column;
+
 }
 .icons {
     margin-left:auto; 
@@ -127,11 +131,34 @@ SPLASH PAGE SECTION STYLING
     justify-content: space-evenly;
 }
 .slideshow {
-    height:350px;
+    height:auto;
     width:45%; 
     border:1px solid #006400; 
     border-radius:15px; 
+    overflow: hidden;
 }
+.slideshow {
+    position: relative;
+    /* Adjust as needed */
+    height:310px;/* Adjust to fit the height of your slides */
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensure this matches the height of the slideshow container */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 1; /* Keep slides below the active one */
+  }
+  
+  .slide.active {
+    opacity: 1;
+    z-index: 2; /* Ensure the active slide is above the others */
+  }
 .testimonials {
     text-align:center; 
 }
@@ -286,11 +313,14 @@ input {
     padding: 10px;
     border-radius:5px; 
     border:none; 
+    background:rgba(198, 198, 198, 0.616);
 }
 textarea {
     height:150px; 
     border-radius:5px; 
     border:none; 
+    background:rgba(198, 198, 198, 0.616);
+
 }
 #note {
     margin-bottom: 40px;

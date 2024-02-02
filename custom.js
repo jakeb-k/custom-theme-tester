@@ -35,3 +35,27 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('resize', handleScroll);
 handleScroll(); // Call this initially to check on page load
+
+//fade slideshow 1
+jQuery(document).ready(function($){
+    let currentSlide = 0;
+    const slides = $('.slide');
+    const totalSlides = slides.length;
+
+    // Set the first slide to be active initially
+    slides.eq(currentSlide).addClass('active');
+
+    const changeSlide = function() {
+        // Remove active class from the current slide
+        slides.eq(currentSlide).removeClass('active');
+
+        // Move to the next slide, or loop back to the first if at the end
+        currentSlide = (currentSlide + 1) % totalSlides;
+
+        // Add active class to the new current slide
+        slides.eq(currentSlide).addClass('active');
+    };
+
+    // Change slide every 3 seconds
+    setInterval(changeSlide, 3000);
+});

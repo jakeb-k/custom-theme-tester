@@ -6,7 +6,7 @@
     <title><?php wp_title(); ?></title>
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body>
 <div class="header">
    
     <div class="logo">
