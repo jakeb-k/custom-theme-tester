@@ -1,6 +1,6 @@
 <?php get_header() ?> 
     <div id="content">
-        <h1> This is the content </h1>
+        <?php get_template_part('comps/splash') ?>
     </div>
     <footer>
         <?php get_footer() ?>

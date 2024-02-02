@@ -5,7 +5,10 @@ Author: Jakeb Knowles
 Version: 1.0
 */
 
-
+#content {
+    width:80%;
+    margin:5% auto; 
+}
 
 /*
 
@@ -61,8 +64,69 @@ SPLASH PAGE SECTION STYLING
 
 
 */
+.before-after {
+    display:flex;
+    width:60%; 
+    margin:0 auto; 
+    flex-direction:row; 
+    justify-content: space-between;
+}
+.slides-container {
+    display:flex;
+    flex-direction:row; 
+    justify-content: space-evenly;
+}
+.slideshow {
+    height:350px;
+    width:45%; 
+    border:1px solid green; 
+    border-radius:15px; 
+}
+/* VINE BTN STYLING */
 
+button.vine-button {
+    animation: beat 3s ease-in-out infinite;
+    transform-origin: center;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
 
+button.vine-button::before,
+button.vine-button::after {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    background-image: url('../custom_theme/assets/shrubE.png');
+    /* Replace with your vine image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+button.vine-button::before {
+    top: 0;
+    left: 0;
+    transform: scale(0.8);
+}
+
+button.vine-button::after {
+    bottom: 0;
+    right: 0;
+    transform: scale(0.8) rotate(180deg);
+}
+
+button.vine-button:hover::before,
+button.vine-button:hover::after {
+    opacity: 0;
+}
 
 
 
