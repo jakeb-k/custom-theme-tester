@@ -489,14 +489,17 @@ FOOTER STYLING
 
 
 */
-.fTitle {
-    
+.fTitle a{
+    text-decoration: none;
     font-family:'Staatliches', sans-serif; 
-    font-size:24px;
-    h1 {
-        font-weight: normal;
-    }
-     
+    font-size:54px;
+    font-weight: normal; 
+    text-decoration-color:#CCFF33; 
+
+}
+.fTitle a:hover {
+   opacity: 0.7;
+   text-decoration: underline;
 }
 .copyright {
     color:#CCFF33;

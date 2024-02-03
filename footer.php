@@ -1,16 +1,19 @@
 <div class="footer">
    
     <div class="fTitle">
-        <a>
-            <h1 style="color:#ccff33;margin-bottom:-20px;">FREEMANS</h1>
-            <h1 style="color:white;">LAWNS</h1>
+        <a href="<?php echo esc_url(home_url('/')); ?>">
+            <span style="color:#ccff33;margin-bottom:-10px;">FREEMANS</span>
+            <div style="color:white;">LAWNS</div>
         </a>
     </div>
     <p class="copyright" style="color:#ccff33;margin-top:auto;"> © 2023 JK Web Dev </p>
     <div class="header-section">
-        <div class="slideBtn" style="margin-top:42.5px; --color:#ccff33;">
-            <button>TESTIMONIALS</button>
-        </div>
+
+        <a href="<?php echo esc_url(get_permalink(get_page_by_path('testimonials'))); ?>"> 
+            <div class="slideBtn" style="margin-top:42.5px; --color:#ccff33;">
+                <button>TESTIMONIALS</button>
+            </div>
+        </a>
 
         <div class="h-sub-sec">
 

@@ -12,13 +12,16 @@
 <div class="header">
    
     <div class="logo">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/mowgo.jpg" alt="Descriptive Alt Text">
+        <a href="<?php echo esc_url(home_url('/')); ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/mowgo.jpg" alt="Descriptive Alt Text">
+        </a>
     </div>
     <div class="header-section">
+        <a href="<?php echo esc_url(get_permalink(get_page_by_path('testimonials'))); ?>"> 
         <div class="slideBtn" style="margin-top:42.5px; --color:#ccff33;">
             <button>TESTIMONIALS</button>
         </div>
-
+        </a>
         <div class="h-sub-sec">
 
             <div class="icons">

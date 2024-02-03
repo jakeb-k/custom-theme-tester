@@ -33,7 +33,7 @@ if ($the_query->have_posts()) :
                 <?php endif; ?>
 
                 <div class="postOps">
-                    <div class="posBtn">
+                    <div class="slideBtn">
                         <a href='<?php the_permalink(); ?>'>
                             <button style="--color:#006400;">
                                 VIEW

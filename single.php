@@ -6,8 +6,8 @@ get_header(); ?>
 <div id="container">
     <div id="articleContainer">
         <!-- Back Button -->
-        <div class="posBtn">
-            <a href="<?php echo get_post_type_archive_link('post'); ?>">
+        <div class="slideBtn">
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('testimonials'))); ?>"> 
                 <button class="tBtn" style="--color:#006400;">BACK</button>
             </a>
         </div>
