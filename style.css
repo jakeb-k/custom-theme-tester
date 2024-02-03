@@ -521,32 +521,6 @@ FOOTER STYLING
 
 
 
-
-/*highlight link styling */
-nav a {
-    font-size:20px; 
-    text-decoration: none;
-    box-shadow: inset 0 0 0 0 rgb(50, 50, 50);
-    color: rgb(50,50,50);
-    margin: 0 -.25rem;
-    padding: 2.5px .25rem;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-}
-
-nav ul {
-    list-style-type: none;
-    margin:0 5%; 
-}
-nav li {
-    margin:4.5px 0; 
-    text-wrap: nowrap;
-}
-nav a:hover {
-    box-shadow: inset 150px 0 0 0 rgb(50, 50, 50);
-    color: #FFD100;
-}
-
-
 /*
 
 
@@ -592,7 +566,38 @@ POST DETAIL PAGE STYLING
 .aInfo * {
     padding:5px 20px;
 }
+/* fly in animations */
+/* Slide in from the left */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
+/* Slide in from the right */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.aInfo {
+    animation: slideInLeft 1s ease-out forwards;
+}
+
+.aImg {
+    animation: slideInRight 1s ease-out forwards;
+}
 
 /*Custom buttons styling */ 
 
