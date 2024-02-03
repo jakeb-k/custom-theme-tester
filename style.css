@@ -391,7 +391,79 @@ textarea {
     transition:0.1s ease-in-out; 
     background-color: #00640083;
 }
+/*
 
+
+
+POSTS PAGE STYLING
+
+
+
+
+*/
+.authOps {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width:12.5%; 
+}
+.authOps a {
+    margin-top:7.5px; 
+}
+.postOps {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.postOps form button {
+    background:none; 
+    font-size:26px;
+    border:none; 
+    transition:0.2s ease-in-out; 
+    &:hover {
+        color:red;
+
+    }
+}
+#dashboard {
+    width:80%;
+    margin:225px auto; 
+}
+#dashboard h1 {
+    font-family: 'Staatliches', sans-serif;
+    color:#006400; 
+    font-weight: normal;
+}
+#dashboard img {
+    height:150px; 
+    width:150px; 
+}
+.dHeader {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    background:#006400;
+    box-shadow: 0 0 10px #CCFF33;
+}
+.dashBody {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    width:100%; 
+    margin:25px auto; 
+}
+.postBox {
+    padding: 20px 0; 
+    display:flex;
+    flex-direction:row; 
+    justify-content: space-evenly;
+    border-bottom:2px solid rgba(73, 73, 73, 0.621);
+    
+}
+
+.pInfo * {
+    font-family: 'Work Sans', sans-serif;
+}
 
 
 
@@ -408,9 +480,6 @@ FOOTER STYLING
 
 
 */
-
-
-
 .fTitle {
     
     font-family:'Staatliches', sans-serif; 
