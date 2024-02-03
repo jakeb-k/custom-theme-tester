@@ -17,7 +17,13 @@ $the_query = new WP_Query($args);
 if ($the_query->have_posts()) : 
     while ($the_query->have_posts()) : $the_query->the_post(); ?>
         <div class="postBox">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/mowgo.png" />
+        <?php
+        $after = get_field('after');
+        if ($after) :
+            echo '<img src="' . esc_url($after['url']) . '" alt="' . esc_attr($after['alt']) . '" />';
+        endif;
+        ?>
+
             <div class="pInfo">
                 <h3> <?php the_title(); ?> </h3>
                 <h6> <i> <?php the_time('jS \of F'); ?> </i></h6>

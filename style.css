@@ -460,7 +460,16 @@ POSTS PAGE STYLING
     border-bottom:2px solid rgba(73, 73, 73, 0.621);
     
 }
+.postBox img {
+    min-width:20%;
+    height:auto; 
+    box-shadow: 0 0 5px rgb(50, 50, 50);
+    border-radius:5px; 
 
+}
+.pInfo {
+    width:75%; 
+}
 .pInfo * {
     font-family: 'Work Sans', sans-serif;
 }
