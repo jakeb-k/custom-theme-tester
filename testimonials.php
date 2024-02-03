@@ -14,8 +14,10 @@ $args = array(
 );
 $the_query = new WP_Query($args);
 
-if ($the_query->have_posts()) : 
-    while ($the_query->have_posts()) : $the_query->the_post(); ?>
+    $post_counter = 0;
+    if ($the_query->have_posts()) : 
+        while ($the_query->have_posts()) : $the_query->the_post();
+            $post_counter++; ?>
         <div class="postBox">
         <?php
         $after = get_field('after');

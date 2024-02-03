@@ -458,7 +458,15 @@ POSTS PAGE STYLING
     flex-direction:row; 
     justify-content: space-evenly;
     border-bottom:2px solid rgba(73, 73, 73, 0.621);
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
     
+}
+.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 .postBox img {
     min-width:20%;
@@ -550,6 +558,7 @@ POST DETAIL PAGE STYLING
 
 
 */
+
 
 #articleContainer h1 {
     color:#006400;

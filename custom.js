@@ -83,3 +83,17 @@ jQuery(document).ready(function($){
     // Change slide every 3 seconds
     setInterval(changeSlide, 3000);
 });
+
+//testimonial fly in animation controller
+
+jQuery(document).ready(function($) {
+    var $postBoxes = $('.postBox');
+    
+    $postBoxes.each(function(index, element) {
+        var $element = $(element);
+        
+        setTimeout(function() {
+            $element.addClass('animate');
+        }, index * 500); // Adjust the delay time (in milliseconds) as needed
+    });
+});
