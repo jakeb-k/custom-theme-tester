@@ -526,7 +526,50 @@ nav a:hover {
 }
 
 
+/*
 
+
+
+
+
+POST DETAIL PAGE STYLING
+
+
+
+
+*/
+
+#articleContainer h1 {
+    color:#006400;
+    font-family:'Staatliches', sans-serif; 
+}
+#articleContainer h4 {
+    color:#006400;
+    font-family:'Staatliches', sans-serif; 
+}
+#articleContainer h6, #articleContainer p {
+    font-family:'Work Sans', sans-serif;
+    color:rgb(34, 34, 34); 
+}
+#articleContainer img {
+    height:auto; 
+    max-width:475px; 
+    border-radius:15px; 
+   
+}
+#articleContainer {
+    width:80%;
+    margin:250px auto; 
+  
+}
+.aBox {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly; 
+}
+.aInfo * {
+    padding:5px 20px;
+}
 
 
 /*Custom buttons styling */ 
