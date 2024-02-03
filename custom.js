@@ -84,6 +84,7 @@ jQuery(document).ready(function($){
     setInterval(changeSlide, 3000);
 });
 
+
 //testimonial fly in animation controller
 
 jQuery(document).ready(function($) {
@@ -96,4 +97,23 @@ jQuery(document).ready(function($) {
             $element.addClass('animate');
         }, index * 500); // Adjust the delay time (in milliseconds) as needed
     });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var scrollButton = document.querySelector('.slideBtn2');
+    var contactForm = document.querySelector('#contact'); // Replace with the actual ID of your contact form
+    
+    if (scrollButton && contactForm) {
+        scrollButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            var targetOffset = contactForm.getBoundingClientRect().top + window.scrollY - 200;
+            
+            window.scrollTo({
+                top: targetOffset,
+                behavior: 'smooth' // Smooth scroll animation
+            });
+        });
+    }
 });

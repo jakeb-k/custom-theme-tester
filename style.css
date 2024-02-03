@@ -80,12 +80,13 @@ scrolled
         height:auto; 
     }
 }
-.header.scrolled .slideBtn button {
-    font-size: 1.15em;
-    padding: 0.4em 0.8em;
+.header.scrolled .slideBtn button, .header.scrolled .slideBtn2 button {
+    font-size: 1.2em;
+    padding: 0.5em 0.95em;
 	transition:0.3s ease-in-out !important; 
 
 }
+
 .header.scrolled * {
 	transition:0.3s ease-in-out;  
 
