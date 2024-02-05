@@ -10,10 +10,11 @@
     <div class="cInput">
         <label for="email">EMAIL:</label>
         <input type="text" name="email" id="email" />
-        
-        <?php if (isset($_GET['error']) && $_GET['error'] == 'email') {
+
+        <?php if (isset($_GET['form-error']) && $_GET['form-error'] == 'email') {
             echo '<div class="error-message">Error: Please enter a valid email address.</div>';
         } ?>
+        
     </div> 
     <div class="cInput">
         <label for="note">JOB DESCRIPTION:</label>

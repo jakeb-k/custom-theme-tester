@@ -36,15 +36,10 @@ add_action('admin_post_contact_form', 'handle_contact_form');
 
 // Process the form submission
 function handle_contact_form() {
-    // Start the session to store error messages if not already started
-    if (!session_id()) {
-        session_start();
-    }
-    error_log('Checking for error parameter: ' . var_export(isset($_GET['error']), true));
     // Validate the email address
     if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-        $_SESSION['error_message'] = 'Please enter a valid email address.';
-        wp_redirect(home_url('/?error=email'));
+        $redirect_url = home_url('/?form-error=email');
+        wp_redirect($redirect_url);
         exit;
     }
     
