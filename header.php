@@ -32,7 +32,7 @@
                 <button>CONTACT</button>
             </div>
         </div>
-        
+
         <div class="icons">
             <span class="icons"><i class="fa-brands fa-square-facebook fa-2x" style="color: #ccff33;"></i></span>
             <span class="icons"><i class="fa-brands fa-instagram fa-2x" style="color: #ccff33;"></i></span>

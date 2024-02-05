@@ -197,8 +197,34 @@ SPLASH PAGE SECTION STYLING
     opacity: 1;
     z-index: 2; /* Ensure the active slide is above the others */
   }
-.testimonials {
-    text-align:center; 
+
+.testimonials { 
+    position: relative; 
+    text-align:center;     
+    padding:2% 0 10%; 
+ }
+.review { 
+  position: absolute; 
+  width: 100%; 
+  opacity: 0; 
+  transition: all 0.5s ease; 
+  left: 100%; 
+  text-wrap:wrap;
+  z-index:4; 
+}
+.active { 
+  opacity: 1; 
+  left: 0; 
+  text-wrap:wrap;
+  z-index:4; 
+}
+.fly-out-left { 
+  left: -100%; 
+  opacity: 0; 
+}
+.fly-in-right { 
+  left: 0; 
+  opacity: 1; 
 }
 
 

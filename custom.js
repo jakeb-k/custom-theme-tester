@@ -99,7 +99,7 @@ jQuery(document).ready(function($) {
     });
 });
 
-
+//contact scroll button controller
 document.addEventListener('DOMContentLoaded', function() {
     var scrollButton = document.querySelector('.slideBtn2');
     var contactForm = document.querySelector('#contact'); // Replace with the actual ID of your contact form
@@ -117,3 +117,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+//testimonial slideshow controller
+let currentSlide = 0;
+const slides = document.querySelectorAll('.review');
+const totalSlides = slides.length;
+
+function moveToNextSlide() {
+  slides[currentSlide].classList.remove('active');
+  slides[currentSlide].classList.add('fly-out-left');
+
+  const nextSlide = (currentSlide + 1) % totalSlides;
+  slides[nextSlide].classList.add('fly-in-right', 'active');
+
+  setTimeout(() => {
+    slides[currentSlide].classList.remove('fly-out-left');
+    slides[nextSlide].classList.remove('fly-in-right');
+    currentSlide = nextSlide;
+  }, 500); // Match the CSS transition time
+}
+
+setInterval(moveToNextSlide, 5000); // Change slide every 5 seconds

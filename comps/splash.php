@@ -51,8 +51,42 @@
             </div>
         </div>
         <div class="testimonials">
-            <h3>My bushes are so trim and clean, I love it. Great work from Indy!</h3>
+                <?php
+                // Query arguments for fetching posts that have 'post details'
+                $args = array(
+                    'post_type' => 'post', // Change to your custom post type if necessary
+                    'posts_per_page' => -1, // Get all posts
+                    'post_status' => 'publish' // Only get published posts
+                );
+
+                // Custom query for posts
+                $testimonial_query = new WP_Query($args);
+                $first = true; // Flag to mark the first item as active
+
+                // Check if the query has posts
+                if ($testimonial_query->have_posts()) : 
+                    // Loop through the posts
+                    while ($testimonial_query->have_posts()) : $testimonial_query->the_post();
+                        // Get the 'review' custom field
+                        $review = get_field('review');
+                        // If there is a review, display it
+                        if ($review) :
+                            ?>
+                            <div class="review <?php echo $first ? 'active' : ''; ?>">
+                                <h3>"<?php echo esc_html($review); ?>"</h3>
+                            </div>
+                            <?php
+                            $first = false; // Only the first item should be marked as active
+                        endif;
+                    endwhile;
+                else :
+                    // No posts found message
+                    echo '<div class="review"><h3 style="text-align:center; color:#006400">No testimonials found.</h3></div>';
+                endif;
+                
+                // Restore original Post Data
+                wp_reset_postdata();
+                ?>
         </div>
     </div>
-    
 </div>
