@@ -115,6 +115,12 @@ SPLASH PAGE SECTION STYLING
     font-weight: normal;
 
 }
+.cta p {
+    color:#00a700;
+    font-family:'Work Sans', sans-serif;
+    text-decoration: underline;
+    
+}
 .splash-container {
     width:80%;
     margin:15% auto 0; 

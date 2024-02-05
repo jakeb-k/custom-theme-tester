@@ -1,5 +1,9 @@
 <div class="splash-container">
     <div class="cta">
+        <?php
+        if (isset($_GET['submission']) && $_GET['submission'] === 'success') {
+        echo '<div class="submission-success"><p><i class="fa-solid fa-circle-check"></i> Submission successful!</p></div>';
+        } ?> 
         <h1> Get a FREE Quote <a>NOW!</a></h1>
         <h3>Contact our lawn mowing experts today (based in South Gold Coast) for a beautifully manicured yard that 
             will make your neighbors green with envy! 
