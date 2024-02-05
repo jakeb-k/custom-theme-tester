@@ -95,7 +95,7 @@ jQuery(document).ready(function($) {
         
         setTimeout(function() {
             $element.addClass('animate');
-        }, index * 500); // Adjust the delay time (in milliseconds) as needed
+        }, index * 100); // Adjust the delay time (in milliseconds) as needed
     });
 });
 

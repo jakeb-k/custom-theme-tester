@@ -8,7 +8,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <title>Freemans Lawns<?php wp_title(); ?></title>
+    <title>Freemans Lawn's<?php wp_title(); ?></title>
     <?php wp_head(); ?>
 </head>
 <body>

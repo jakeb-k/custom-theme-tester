@@ -2,7 +2,7 @@
    
     <div class="fTitle">
         <a href="<?php echo esc_url(home_url('/')); ?>">
-            <span style="color:#ccff33;margin-bottom:-10px;">FREEMANS</span>
+            <span style="color:#ccff33;margin-bottom:-10px;">FREEMAN'S</span>
             <div style="color:white;">LAWNS</div>
         </a>
     </div>
