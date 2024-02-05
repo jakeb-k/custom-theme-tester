@@ -36,7 +36,17 @@ HEADER STYLING
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width:40%; 
+    width:45%; 
+}
+.header-links {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    width:70%; 
+}
+.slideBtn button {
+    margin-right:5%; 
 }
 .logo img {
     height:auto;
@@ -51,8 +61,11 @@ HEADER STYLING
 
 }
 .icons {
+    display:flex;
+    flex-direction: column;
     margin-left:auto; 
     padding:5px 5px 5px 0; 
+    font-size:28px; 
 }
 /*
 
@@ -80,17 +93,19 @@ scrolled
         height:auto; 
     }
 }
-.header.scrolled .slideBtn button, .header.scrolled .slideBtn2 button {
-    font-size: 1.2em;
-    padding: 0.5em 0.95em;
+.scrolled .logo img {
+	transition:0.3s ease-in-out !important; 
+    
+}
+.scrolled .icons {
+    font-size:24px; 
 	transition:0.3s ease-in-out !important; 
 
 }
-
-.header.scrolled * {
-	transition:0.3s ease-in-out;  
-
-}
+/* 
+--slant: 0.7em;
+font-size: 1.55em;
+padding: 0.6em 1.2em; */
 /*
 
 
@@ -116,14 +131,15 @@ SPLASH PAGE SECTION STYLING
 
 }
 .cta p {
-    color:#00a700;
+    color:#006400;
     font-family:'Work Sans', sans-serif;
-    text-decoration: underline;
+    font-weight:bold; 
     
 }
 .splash-container {
     width:80%;
     margin:15% auto 0; 
+    
 }
 .before-after {
     display:flex;

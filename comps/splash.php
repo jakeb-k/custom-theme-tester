@@ -2,7 +2,7 @@
     <div class="cta">
         <?php
         if (isset($_GET['submission']) && $_GET['submission'] === 'success') {
-        echo '<div class="submission-success" ><p>Submission successful!</p></div>';
+        echo '<div class="submission-success"><p><i class="fa-solid fa-envelope-circle-check"></i> Message was sent!</p></div>';
         } ?> 
         <h1> Get a FREE Quote <a>NOW!</a></h1>
         <h3>Contact our lawn mowing experts today (based in South Gold Coast) for a beautifully manicured yard that 

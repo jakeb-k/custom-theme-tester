@@ -13,30 +13,32 @@
 </head>
 <body>
 <div class="header">
-   
+  
     <div class="logo">
         <a href="<?php echo esc_url(home_url('/')); ?>">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/mowgo.jpg" alt="Descriptive Alt Text">
         </a>
     </div>
-    <div class="header-section">
-        <a href="<?php echo esc_url(get_permalink(get_page_by_path('testimonials'))); ?>"> 
-        <div class="slideBtn" style="margin-top:42.5px; --color:#ccff33;">
-            <button>TESTIMONIALS</button>
-        </div>
-        </a>
-        <div class="h-sub-sec">
 
-            <div class="icons">
-                <span class="icons"><i class="fa-brands fa-square-facebook fa-2x" style="color: #ccff33;"></i></span>
-                <span class="icons"><i class="fa-brands fa-instagram fa-2x" style="color: #ccff33;"></i></span>
-            </div>
-        
-            <div class="slideBtn2" style="--color:#ccff33; ">
+    <div class="header-section"> 
+        <div class="header-links">
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('testimonials'))); ?>"> 
+                <div class="slideBtn" style="margin-top:42.5px; --color:#ccff33;">
+                    <button>TESTIMONIALS</button>
+                </div>
+            </a>
+
+            <div class="slideBtn2" style="--color:#ccff33;margin-top:42.5px; ">
                 <button>CONTACT</button>
             </div>
-      
         </div>
-      
+        
+        <div class="icons">
+            <span class="icons"><i class="fa-brands fa-square-facebook fa-2x" style="color: #ccff33;"></i></span>
+            <span class="icons"><i class="fa-brands fa-instagram fa-2x" style="color: #ccff33;"></i></span>
+        </div>
     </div>
+
+   
+    
 </div>
