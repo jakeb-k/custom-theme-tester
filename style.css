@@ -513,6 +513,7 @@ POSTS PAGE STYLING
     transform: translateY(0);
 }
 .postBox img {
+   object-fit: cover;
     min-width:20%;
     height:auto; 
     box-shadow: 0 0 5px rgb(50, 50, 50);
@@ -771,12 +772,29 @@ MEDIA QUERIES
      }
 }
 
-@media only screen and (max-width:750px) {
+@media only screen and (max-width:769px) {
     .header-links {
         display:flex;
         flex-direction: column;
         justify-content: center;
         width:auto; 
+    }
+    .postBox {
+        flex-direction:column; 
+        align-items: center;
+    }
+    .postBox .slideBtn button{
+        font-size:1em; 
+        margin:10px auto;
+    }
+    .postBox img {
+        min-width:70%; 
+    }
+    .pInfo h3 {
+        font-size:20px !important; 
+    }
+    #dashboard {
+        margin:170px auto; 
     }
      .review h3 {
         font-size:16px; 
