@@ -349,7 +349,7 @@ CONTACT FORM STYLING
 
 #contact {
     align-self: center;
-    width: 500px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -757,6 +757,15 @@ MEDIA QUERIES
     .testimonials { 
         margin-bottom:12.5%; 
      }
+     #contact {
+        width:65%; 
+        h1 {
+            font-size:38px; 
+        }
+     }
+     label {
+        font-size:18px; 
+     }
 }
 
 @media only screen and (max-width:750px) {
@@ -819,6 +828,9 @@ MEDIA QUERIES
         justify-content: space-between;
         height:50%;
         margin-bottom:325px !important; 
+    }
+    #contact {
+        width:80%;    
     }
 }
 @media only screen and (max-width:550px) {
