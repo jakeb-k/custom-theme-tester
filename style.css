@@ -212,7 +212,7 @@ SPLASH PAGE SECTION STYLING
   opacity: 1; 
   left: 0; 
   text-wrap:wrap;
-  z-index:4; 
+  z-index:3; 
 }
 .fly-out-left { 
   left: -100%; 
@@ -310,7 +310,6 @@ ABOUT SECTION STYLING
 
 
 */
-
 .animated-title {
     opacity: 0;
     transform: translateX(-100%);
@@ -776,6 +775,16 @@ MEDIA QUERIES
     }
     
 }
+
+@media only screen and (max-width:700px) {
+    
+    .about-container h1 {
+        font-size:52px; 
+    }
+    .about-list {
+        font-size:16px; 
+    }
+}
 @media only screen and (max-width:600px) {
     
     .logo img {
@@ -812,6 +821,14 @@ MEDIA QUERIES
         margin-bottom:325px !important; 
     }
 }
+@media only screen and (max-width:550px) {
+    .about-container h1 {
+        font-size:46px; 
+    }
+    .about-list {
+        font-size:14px; 
+    }
+}
 @media only screen and (max-width:430px){
     .header.scrolled .logo img {
         width:129px; 
@@ -839,6 +856,12 @@ MEDIA QUERIES
     }
     .splash-container {
         margin-top:150px; 
+    }
+    .about-container h1 {
+        font-size:38px; 
+    }
+    .about-list {
+        font-size:12px; 
     }
 
 }
