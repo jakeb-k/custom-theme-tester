@@ -43,11 +43,9 @@ HEADER STYLING
     flex-direction:row;
     justify-content: space-between;
     align-items: center;
-    width:70%; 
+    width:87.5%; 
 }
-.slideBtn button {
-    margin-right:5%; 
-}
+
 .logo img {
     height:auto;
     width:269px; 
@@ -100,7 +98,6 @@ scrolled
 .scrolled .icons {
     font-size:24px; 
 	transition:0.3s ease-in-out !important; 
-
 }
 /* 
 --slant: 0.7em;
@@ -693,4 +690,109 @@ POST DETAIL PAGE STYLING
     --s: #0005;
     transition: none;
 }
+/*
 
+
+
+
+MEDIA QUERIES
+
+
+
+
+
+*/
+
+@media only screen and (max-width:1200px){
+    .icons {
+        font-size:24px; 
+    }
+
+    .scrolled .icons {
+        font-size:20px; 
+    }
+    .slideBtn button, .slideBtn2 button {
+        font-size:1.4em;
+       
+    }
+    
+}
+@media only screen and (max-width:1000px){
+    .icons {
+        font-size:20px; 
+    }
+    .slideBtn button, .slideBtn2 button {
+        font-size:1.2em;
+       
+    }
+    .logo img {
+        width:229px; 
+    }
+    .header {
+        height:fit-content;
+    }
+    .header.scrolled {
+        height:fit-content; 
+    }
+}
+@media only screen and (max-width:850px) {
+    .icons {
+        font-size:20px; 
+    }
+    .slideBtn button, .slideBtn2 button {
+        font-size:0.85em;
+        
+    }
+    .logo img {
+        width:209px; 
+    }
+}
+@media only screen and (max-width:600px) {
+    .header-links {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width:auto; 
+    }
+    .logo img {
+        width:169px; 
+    }
+    .slideBtn {
+        margin-top:0 !important; 
+        margin-bottom:-20px; 
+    }
+    .header.scrolled  {
+        background-color: #006400bd;
+        height:12.5%; 
+        transition:0.3s ease-in-out !important; 
+        .logo img {
+            width:159px;
+            height:auto; 
+        }
+    }
+    .scrolled .logo img {
+        transition:0.3s ease-in-out !important; 
+        
+    }
+    .scrolled .icons {
+        font-size:16px; 
+        transition:0.3s ease-in-out !important; 
+    }
+}
+@media only screen and (max-width:400px){
+    .slideBtn button, .slideBtn2 button {
+        font-size:0.7em; 
+    }
+}
+/* 
+--slant: 0.7em;
+font-size: 1.55em;
+padding: 0.6em 1.2em;
+
+.logo img {
+    height:auto;
+    width:269px; 
+    border-radius:15px; 
+    box-shadow:0 0 20px black; 
+    margin-top:20px; 
+  }*/

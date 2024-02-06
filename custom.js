@@ -137,4 +137,4 @@ function moveToNextSlide() {
   }, 500); // Match the CSS transition time
 }
 
-setInterval(moveToNextSlide, 5000); // Change slide every 5 seconds
+setInterval(moveToNextSlide, 4000); // Change slide every 4 seconds
