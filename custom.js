@@ -23,7 +23,7 @@ function isElementInViewport(el) {
 
 //scroll to about section
 function handleScroll() {
-    var elements = document.querySelectorAll('.about-list');
+    var elements = document.querySelectorAll('.about-container');
     elements.forEach(function(element) {
         if (isElementInViewport(element)) {
             element.classList.add('in-view');

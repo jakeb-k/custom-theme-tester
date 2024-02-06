@@ -541,6 +541,9 @@ FOOTER STYLING
 
 
 */
+.fTitle {
+    margin-top:auto; 
+}
 .fTitle a{
     text-decoration: none;
     font-family:'Staatliches', sans-serif; 
@@ -726,7 +729,7 @@ MEDIA QUERIES
     .logo img {
         width:229px; 
     }
-    .header {
+    .header, .footer {
         height:fit-content;
     }
     .header.scrolled {
@@ -793,6 +796,14 @@ MEDIA QUERIES
     .about-list {
         font-size:16px; 
     }
+    .fTitle a{
+        font-size:54px;
+    }
+
+    .copyright {
+
+        font-size:12px;
+    }
 }
 @media only screen and (max-width:600px) {
     
@@ -813,7 +824,7 @@ MEDIA QUERIES
         transition:0.3s ease-in-out !important; 
         
     }
-    .scrolled .icons {
+    .scrolled .icons, .footer .icons {
         font-size:16px; 
         transition:0.3s ease-in-out !important; 
     }
@@ -874,6 +885,14 @@ MEDIA QUERIES
     }
     .about-list {
         font-size:12px; 
+    }
+    .fTitle a{
+        font-size:32px;
+    }
+
+    .copyright {
+
+        font-size:10px;
     }
 
 }
